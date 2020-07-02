@@ -15,8 +15,10 @@ public class MagicalSticks_654_A
         for(int iter1=0;iter1<T;iter1++)
         {
             long n=sc.nextLong();
+            //if odd
             if((n&1)==1)
                 System.out.println((n+1)/2);
+            //else even
             else
                 System.out.println(n/2);
         }
