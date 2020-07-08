@@ -19,13 +19,11 @@ int main()
     cin>>n;
 
     long long int diff=LLONG_MAX;
-    int flag=0;
-    long long int r,c;
+    long long int r=0,c=0;
     for(long long int i=1;i<=sqrt(n);i++)
     {
         if(n%i==0)
         {
-            flag=1;
             long long int temp=n/i;
             long long int tempDiff=abs(temp-i);
             if(tempDiff<diff)
@@ -44,9 +42,6 @@ int main()
             }
         }
     }
-    if(flag==0)
-        cout<<"===\n";
-    else
-        cout<<r<<" "<<c<<"\n";
+    cout<<r<<" "<<c<<"\n";
     return 0;
 }
