@@ -16,44 +16,31 @@ int main()
     ll n;
     cin>>n;
 
-    double arr1[n];
-    double arr2[n];
-    ll arr[n];
+    ll temp;
+    ll pos=0,neg=0;
     for(ll i=0;i<n;i++)
     {
-        cin>>arr[i];
-        arr1[i]=(double)arr[i]/1.0;
-        arr2[i]=(double)arr[i]/-1.0;
-    }
-
-    ll pos1=0;
-    for(ll i=0;i<n;i++)
-    {
-        if(arr1[i]>0)
-            pos1++;
-    }
-
-    ll pos2=0;
-    for(ll i=0;i<n;i++)
-    {
-        if(arr2[i]>0)
-            pos2++;
+        cin>>temp;
+        if(temp>0)
+            pos++;
+        else if(temp<0)
+            neg++;
     }
 
     if(n%2==0)
     {
-        if(pos1>=(n/2))
+        if(pos>=(n/2))
             cout<<"1\n";
-        else if(pos2>=(n/2))
+        else if(neg>=(n/2))
             cout<<"-1\n";
         else
             cout<<"0\n";
     }
     else
     {
-        if(pos1>=(n/2)+1)
+        if(pos>=(n/2)+1)
             cout<<"1\n";
-        else if(pos2>=(n/2)+1)
+        else if(neg>=(n/2)+1)
             cout<<"-1\n";
         else
             cout<<"0\n";
@@ -62,4 +49,3 @@ int main()
 
     return 0;
 }
-
