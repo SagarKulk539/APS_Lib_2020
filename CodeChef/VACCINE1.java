@@ -1,6 +1,6 @@
 /*
 APS-2020
-Problem Description, Input, Output : https://www.codechef.com/JULY20B/problems/ADAKING
+Problem Description, Input, Output : https://www.codechef.com/problems/VACCINE1
 Code by : Sagar Kulkarni
 */
 
